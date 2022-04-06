@@ -23,11 +23,11 @@ for i in range(10):
     #size=input('【尺寸】')
       self.total = int(eval(input("\n【总产量】(pcs): ")))
       self.numper1 = round(eval(input("【分条数】: ")))
-      #self.percentage= float(int(input('【合格率】(%):'))/100)
+      self.percentage= float(int(input('【合格率】(%):'))/100)
       self.length1 = float(eval(input("【单片长度】(mm): "))/1000)
 
     def coating(self,*args):
-      pieces = math.ceil(self.total/self.numper1*1.01 )
+      pieces = math.ceil(self.total/self.numper1*self.percentage )
       length2 =math.ceil(pieces*self.length1)
       print('\n【总大片数】:',pieces,'片')
       print('【总米数】:',length2,'米')
