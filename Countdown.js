@@ -96,7 +96,7 @@ content:tlist[nowlist][0]+":"+today(tnumcount(nowlist))+"天,"+tlist[Number(nowl
 })
 
 function title_random(num){
-  let r = Math.floor((Math.random()*10)+1);
+  let r = Math.floor((Math.random()*12)+1);
   let dic = {
     1:"距离放假，还要摸鱼多少天？",
     2:"坚持住，就快放假啦！",
@@ -107,7 +107,9 @@ function title_random(num){
     7:"只有摸鱼才是赚老板的钱",
     8:"一起摸鱼吧",
     9:"摸鱼中，期待下一个假日",
-    10: "小乌龟慢慢爬"
+    10: "小乌龟慢慢爬",
+    11:"太难了！",
+    12:"疫情防控，放假也不能去玩（自我安慰中…）"
   };
   return num==0?"节日快乐，万事大吉":dic[r]
 }
