@@ -11,10 +11,9 @@ import math,time,logging
 from random import uniform
 from datetime import datetime
 
-#while True:
-for i in range(10):
 
-  class Yields():
+
+class Yields():
   #start = time.perf_counter()
 
     def input_num(self,*agrs):
@@ -57,6 +56,8 @@ for i in range(10):
       #print('\n'+'♥️'*3+"下个型号"+'♥️'*3)
       #print(datetime.now())
       print ('\n♥️'+time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())+'♥️')
+
+for i in range(10):
 
   yie = Yields()
   try:
