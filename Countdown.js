@@ -107,7 +107,7 @@ function icon_now(num){
 $done({
 title:title_random(tnumcount(Number(nowlist))),
 icon:icon_now(tnumcount(Number(nowlist))),
-function icon_color(colors){
+function iconcolor(colors){
   if(colors=="hare"){
     return 'icon-color:#FCEFE8'
   }else if(colors=="timer"){
