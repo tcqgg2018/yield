@@ -107,14 +107,16 @@ function icon_now(num){
 $done({
 title:title_random(tnumcount(Number(nowlist))),
 icon:icon_now(tnumcount(Number(nowlist))),
-if(icon_now=="hare"){
-  return 'icon-color':'#FCEFE8'
-}else if(icon_now=="timer"){
-  return 'icon-color':'#F2BE45'
-}else if(icon_now=="gift"){
-  return 'icon-color':'#FF2121'
-}else{
-  return 'icon-color':'#00BC12'
+function icon_color(icon_now){
+  if(icon_now=="hare"){
+    return 'icon-color':'#FCEFE8'
+  }else if(icon_now=="timer"){
+    return 'icon-color':'#F2BE45'
+  }else if(icon_now=="gift"){
+    return 'icon-color':'#FF2121'
+  }else{
+    return 'icon-color':'#00BC12'
+  }
 }
 content:tlist[nowlist][0]+":"+today(tnumcount(nowlist))+"天,"+tlist[Number(nowlist) + Number(1)][0] +":"+ tnumcount(Number(nowlist) + Number(1))+ "天,"+tlist[Number(nowlist) + Number(2)][0]+":"+tnumcount(Number(nowlist) + Number(2))+"天"
 })
