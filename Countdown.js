@@ -111,7 +111,7 @@ function icon_color(colors){
   if(colors=="hare"){
     return 'icon-color':'#FCEFE8'
   }else if(colors=="timer"){
-    return 'icon-color':'#F2BE45'
+    return 'icon-color':'#FF3300'
   }else if(colors=="gift"){
     return 'icon-color':'#FF2121'
   }else{
