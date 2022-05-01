@@ -103,11 +103,22 @@ function icon_now(num){
     return "tortoise"
   }
 }
-
+//>图标颜色
+function icon_color(colors){
+  if(colors="hare"){
+    return '#F0FCFF'
+  }else if(colors="timer"){
+    return '#AE7000'
+  }else if(colors="gift"){
+    return '#BE002F'
+  }else{
+    return '#00BC12'
+  }
+}
 $done({
 title:title_random(tnumcount(Number(nowlist))),
 icon:icon_now(tnumcount(Number(nowlist))),
-'icon-color':'#FF3300',
+"icon-color":icon_color(tnumcount(Number(nowlist))),
 content:tlist[nowlist][0]+":"+today(tnumcount(nowlist))+"天,"+tlist[Number(nowlist) + Number(1)][0] +":"+ tnumcount(Number(nowlist) + Number(1))+ "天,"+tlist[Number(nowlist) + Number(2)][0]+":"+tnumcount(Number(nowlist) + Number(2))+"天"
 })
 function title_random(num){
