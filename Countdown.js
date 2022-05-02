@@ -96,7 +96,7 @@ function icon_now(num){
   if(num<=7 && num>3 ){
     return "hare"
   }else if(num<=3 && num>0){
-    return "timer"
+    return "hourglass.bottomhalf.filled"
   }else if(num==0){
     return "gift"
   }else{
@@ -107,8 +107,8 @@ function icon_now(num){
 function icon_color(colors){
   if(colors="hare"){
     return '#F0FCFF'
-  }else if(colors="timer"){
-    return '#AE7000'
+  }else if(colors="hourglass.bottomhalf.filled"){
+    return '#C1E4E9'
   }else if(colors="gift"){
     return '#BE002F'
   }else{
