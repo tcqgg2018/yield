@@ -108,7 +108,7 @@ function icon_color(colors){
   if(colors="hare"){
     return '#F0FCFF'
   }else if(colors="hourglass.tophalf.filled"){
-    return '#E6B422'
+    return '#8A3B00'
   }else if(colors="gift"){
     return '#BE002F'
   }else{
