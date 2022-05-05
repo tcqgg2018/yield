@@ -108,7 +108,7 @@ function icon_color(num){
   if(num<=7 && num>3){
     return '#F0FCFF'
   }else if(num<=3 && num>0){
-    return '#8A3B00'
+    return '#EA5506'
   }else if(num==0){
     return '#BE002F'
   }else{
