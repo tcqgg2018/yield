@@ -104,12 +104,12 @@ function icon_now(num){
   }
 }
 //>图标颜色
-function icon_color(colors){
-  if(colors="hare"){
+function icon_color(num){
+  if(num<=7 && num>3){
     return '#F0FCFF'
-  }else if(colors="hourglass.tophalf.filled"){
+  }else if(num<=3 && num>0){
     return '#8A3B00'
-  }else if(colors="gift"){
+  }else if(num==0){
     return '#BE002F'
   }else{
     return '#00BC12'
